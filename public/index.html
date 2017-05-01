@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>responsive-design</title>
   <link rel="stylesheet" href="/app.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
   <div class="app">
-  <div class="hero__background">
+    <div class="hero__background">
       <div class="nav">
-      <div class="nav__logo"> <a href="#" class="nav__logo-link"> <img src="/images/lewis-logo.png" alt="Lewis Communications Logo" class="nav__logo-img"></a></div>
-      <div class="nav__right">
-        <a href="#" class="nav__right-link">Browse</a>
-        <a href="#" class="nav__right-link">Discover</a>
-        <a href="#" class="nav__right-link">Add Event</a>
-        <a href="#" class="nav__right-link-btn">Join Us</a>
+        <div class="nav__logo">
+          <a href="#" class="nav__logo-link"> <img src="/images/lewis-logo.png" alt="Lewis Communications Logo" class="nav__logo-img"></a>
+        </div>
+        <div class="nav__right">
+          <a href="#" class="nav__right-link">Browse</a>
+          <a href="#" class="nav__right-link">Discover</a>
+          <a href="#" class="nav__right-link">Add Event</a>
+          <a href="#" class="nav__right-link-btn">Join Us</a>
+        </div>
       </div>
-    </div>
-    <div class="hero">
-      <div class="container">
-        <div class="hero__content">
-          <div class="hero__content-tagline">
-            <h1>Discover the top live music events near you</h1>
-          </div>
-          <div class="form">
-            <input type="text" placeholder="Enter your favorite artist or genre" class="form__input">
-            <div class="form__control">
-              <select class="form__select"> <i class="fa fa-caret-down form__select-caret" aria-hidden="true"></i>
+      <div class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__content-tagline">
+              <h1>Discover the top live music events near you</h1>
+            </div>
+            <div class="form">
+              <input type="text" placeholder="Enter your favorite artist or genre" class="form__input">
+              <div class="form__control">
+                <select class="form__select"> <i class="fa fa-caret-down form__select-caret" aria-hidden="true"></i>
                 <option value="location">Location</option>
                 <option value="Nashville">Nashville, TN</option>
                 <option value="Mobile">Mobile, AL</option>
                 <option value="Birmingham">Birmingham, AL</option>
               </select>
-              <select name="" id="" class="form__select">
+                <select name="" id="" class="form__select">  <i class="fa fa-caret-down form__select-caret" aria-hidden="true"></i>
                 <option value="budget">Budget</option>
                 <option value="Basic">Basic</option>
                 <option value="Better">Better</option>
                 <option value="Bougie">Bougie</option>
               </select>
-              <button class="form__button">Find Events</button>
+                <button class="form__button">Find Events</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="container__horizontal">
+      <ul class="filter__group">
+        <span class="filter__group-active"><li class="filter__group-type">Most Popular</li></span>
+        <li class="filter__group-type">Coming Up</li>
+        <li class="filter__group-type">Near You</li>
+      </ul>
+      <div class="grid">
+
+        <div class="grid__item">
+          <div class="grid__item-top">
+            <img src="/images/guitar.png" alt="Guitar" class="grid__item-img">
+            <p class="grid__item-title">Country</p>
+            <p class="grid__item-subtitle">Kenny Chesney w/ Grace Potter</p>
+          </div>
+          <div class="grid__item-bottom">
+            <div class="grid__item-place">
+              <p class="grid__item-location">Location</p>
+              <p class="grid__item-city">Nashville, TN</p>
+            </div>
+            <div class="grid__item-cost">
+              <p class="grid__item-price">Price</p>
+              <p class="grid__item-money">$30-260</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="grid__item-top">
+            <img src="/images/saxophone.png" alt="Guitar" class="grid__item-img">
+            <p class="grid__item-title">Jazz</p>
+            <p class="grid__item-subtitle">Gerald Albright Band</p>
+          </div>
+          <div class="grid__item-bottom">
+            <div class="grid__item-place">
+              <p class="grid__item-location">Location</p>
+              <p class="grid__item-city">Atlanta, GA</p>
+            </div>
+            <div class="grid__item-cost">
+              <p class="grid__item-price">Price</p>
+              <p class="grid__item-money">$15-90</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__item">
+          <div class="grid__item-top">
+            <img src="/images/keyboard.png" alt="Guitar" class="grid__item-img">
+            <p class="grid__item-title">Electronic</p>
+            <p class="grid__item-subtitle">The Rock Church</p>
+          </div>
+          <div class="grid__item-bottom">
+            <div class="grid__item-place">
+              <p class="grid__item-location">Location</p>
+              <p class="grid__item-city">Birmingham, AL</p>
+            </div>
+            <div class="grid__item-cost">
+              <p class="grid__item-price">Price</p>
+              <p class="grid__item-money">$20-40</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discover"><p class="discover_btn">Discover More</p></div>
+    </div>
   </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

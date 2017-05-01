@@ -6,8 +6,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $font-stack: Lato, sans-serif;
 $c-white: #FFFFFF;
 $c-black: #393939;
+$c-black-font: #4D4F56;
 $c-gray: #E1E2E5;
 $c-darkgray: #9B9DA0;
+$c-gray-accent: #DFE0E3;
+$c-gray-font: #B3B6BF;
 $c-accent: #FF3434;
 
 @import 'font-awesome';
@@ -17,3 +20,4 @@ $c-accent: #FF3434;
 @import 'components/nav-bar';
 @import 'components/hero';
 @import 'components/form';
+@import 'components/content';

@@ -2,4 +2,64 @@
   width: 100%;
   max-width: 60rem;
   margin: 0 auto;
+
+  &__horizontal {
+   max-width: 70rem;
+   width: 100%;
+   margin: 0 auto;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -1rem;
+
+  &__item {
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    flex-grow: 1;
+    margin: 1rem;
+
+    &-img {
+      border-radius: .4rem;
+      height: 15rem;
+    }
+   &-title {
+     color: $c-gray-font;
+     font-size: 1rem;
+   }
+   &-subtitle {
+     color: $c-black-font;
+     font-size: 1.5rem;
+   }
+   &-bottom {
+     border-top: .1rem solid $c-gray-accent;
+     display: flex;
+     flex-direction: row;
+   }
+   &-place {
+     display: flex;
+     flex-direction: column;
+     border-right: .1rem solid $c-gray-accent;
+     width: 50%;
+   }
+   &-cost {
+     margin-left: 1rem;
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+   }
+  }
+}
+
+.grid__item-location, .grid__item-price {
+  color: $c-gray-font;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.grid__item-city, .grid__item-money {
+  margin: 0;
+  margin-top: .5rem;
 }

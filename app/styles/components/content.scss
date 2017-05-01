@@ -1,0 +1,31 @@
+.filter__group {
+  display: flex;
+  flex-direction: row;
+  color: $c-black-font;
+  font-weight: bold;
+  justify-content: space-around;
+  width: 25%;
+  margin-bottom: 3rem;
+
+  &-active::after {
+    position: absolute;
+    bottom: 9.5rem;
+    left: 8.5rem;
+    border-bottom: .3rem solid $c-accent;
+    border-radius: .4rem;
+    width: 5%;
+    content: '';
+
+  }
+}
+.discover {
+  padding: .7rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $c-accent;
+  color: $c-white;
+  width: 25%;
+  text-align: center;
+}
