@@ -8,8 +8,9 @@
 </head>
 <body>
   <div class="app">
-    <div class="nav">
-      <div class="nav__logo"> <a href="#" class="nav__logo-link">LEWIS</a> </div>
+  <div class="hero__background">
+      <div class="nav">
+      <div class="nav__logo"> <a href="#" class="nav__logo-link"> <img src="/images/lewis-logo.png" alt="Lewis Communications Logo" class="nav__logo-img"></a></div>
       <div class="nav__right">
         <a href="#" class="nav__right-link">Browse</a>
         <a href="#" class="nav__right-link">Discover</a>
@@ -17,6 +18,34 @@
         <a href="#" class="nav__right-link-btn">Join Us</a>
       </div>
     </div>
+    <div class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__content-tagline">
+            <h1>Discover the top live music events near you</h1>
+          </div>
+          <div class="form">
+            <input type="text" placeholder="Enter your favorite artist or genre" class="form__input">
+            <div class="form__control">
+              <select class="form__select"> <i class="fa fa-caret-down form__select-caret" aria-hidden="true"></i>
+                <option value="location">Location</option>
+                <option value="Nashville">Nashville, TN</option>
+                <option value="Mobile">Mobile, AL</option>
+                <option value="Birmingham">Birmingham, AL</option>
+              </select>
+              <select name="" id="" class="form__select">
+                <option value="budget">Budget</option>
+                <option value="Basic">Basic</option>
+                <option value="Better">Better</option>
+                <option value="Bougie">Bougie</option>
+              </select>
+              <button class="form__button">Find Events</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <script src="/app.js" charset="utf-8"></script>
 </body>
