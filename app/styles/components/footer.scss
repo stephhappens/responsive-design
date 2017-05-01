@@ -1,17 +1,33 @@
 .footer {
   border-top: .1rem solid $c-darkgray;
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
+  color: $c-darkgray;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__left {
     display: flex;
-    margin-left: 1rem;
-    justify-content: space-around;
+
+    &-copyright {
+      margin-right: 1rem;
+    }
   }
 
   &__right {
     display: flex;
 
+    &-social {
+      margin-right: 1rem;
+
+      &-social:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
