@@ -1,8 +1,6 @@
 .container {
-  width: 100%;
-  max-width: 60rem;
+  max-width: 45rem;
   margin: 0 auto;
-
   @media (min-width: 350px) and (max-width: 700px) {
     .container {
       width: 60rem;
@@ -10,9 +8,9 @@
   }
 
   &__horizontal {
-   max-width: 70rem;
-   width: 100%;
-   margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -32,44 +30,99 @@
     margin: 1rem;
 
     &-img {
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       height: 15rem;
     }
-   &-title {
-     color: $c-gray-font;
-     font-size: 1rem;
-   }
-   &-subtitle {
-     color: $c-black-font;
-     font-size: 1.5rem;
-   }
-   &-bottom {
-     border-top: .1rem solid $c-gray-accent;
-     display: flex;
-     flex-direction: row;
-   }
-   &-place {
-     display: flex;
-     flex-direction: column;
-     border-right: .1rem solid $c-gray-accent;
-     width: 50%;
-   }
-   &-cost {
-     margin-left: 1rem;
-     display: flex;
-     flex-direction: column;
-     width: 50%;
-   }
+
+    &-title {
+      color: $c-gray-font;
+      font-size: 1rem;
+    }
+
+    &-subtitle {
+      color: $c-black-font;
+      font-size: 1.5rem;
+    }
+
+    &-bottom {
+      border-top: 0.1rem solid $c-gray-accent;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-place {
+      display: flex;
+      flex-direction: column;
+      border-right: 0.1rem solid $c-gray-accent;
+      width: 50%;
+    }
+
+    &-cost {
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
   }
 }
 
-.grid__item-location, .grid__item-price {
+.grid__item-location,
+.grid__item-price {
   color: $c-gray-font;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 0;
 }
 
-.grid__item-city, .grid__item-money {
-  margin: 0;
-  margin-top: .5rem;
+.grid__item-city,
+.grid__item-money {
+  margin: 0.5rem 0 0;
+}
+
+@media (max-width: 350px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item {
+    flex-grow: 1;
+
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .grid {
+    display: flex;
+    margin: -1rem;
+    // // flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .grid__item {
+    flex-basis: calc(100% / 2 - 1rem - 1rem);
+    flex-grow: 1;
+    margin: 1rem;
+  }
+
+  // .grid__item:first-child {
+  //   min-width: 100%;
+  // //   object-fit: cover;
+  // }
+
+  .grid__item-img:first-of-type {
+    min-height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 300px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid__item {
+    flex-basis: calc(100%);
+    flex-grow: 1;
+  }
 }
