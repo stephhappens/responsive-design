@@ -1,0 +1,17 @@
+.footer {
+  border-top: .1rem solid $c-darkgray;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  &__left {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-around;
+  }
+
+  &__right {
+    display: flex;
+
+  }
+}
