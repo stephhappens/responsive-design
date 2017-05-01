@@ -1,31 +1,50 @@
+.app__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .filter__group {
   display: flex;
   flex-direction: row;
   color: $c-black-font;
   font-weight: bold;
-  justify-content: space-around;
-  width: 25%;
   margin-bottom: 3rem;
+
+  &-active {
+    position: relative;
+  }
 
   &-active::after {
     position: absolute;
-    bottom: 9.5rem;
-    left: 8.5rem;
+    bottom: -0.5rem;
+    // left: 8.5rem;
     border-bottom: .3rem solid $c-accent;
     border-radius: .4rem;
-    width: 5%;
+    width: 45%;
     content: '';
+  }
 
+  &-type {
+    margin-right: 1rem;
   }
 }
-.discover {
-  padding: .7rem;
-  margin: 1rem;
+
+.button__flex {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem;
+}
+
+.discover {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
   background: $c-accent;
   color: $c-white;
-  width: 25%;
   text-align: center;
+  cursor: pointer;
+  outline: 0;
+  border-radius: .4rem;
 }

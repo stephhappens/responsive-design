@@ -1,5 +1,8 @@
 .form {
  width: 100%;
+ display: flex;
+ flex-grow: 1;
+ flex-direction: column;
 
   &__input {
     width: 100%;
@@ -43,5 +46,7 @@
     font-size: 1rem;
     font-weight: 500;
     width: calc(100% / 3 - 1rem);
+    outline: none;
+    cursor: pointer;
   }
 }
