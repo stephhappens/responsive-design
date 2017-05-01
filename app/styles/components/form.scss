@@ -18,6 +18,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 1rem;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
   }
 
   &__select {
@@ -29,11 +30,8 @@
     font-weight: 500;
     border-radius: .4rem;
     -webkit-appearance: none;
-
-    &-caret {
-      color: $c-darkgray;
-      font-size: 1rem;
-    }
+    background: $c-white url(./images/carat-down.png) no-repeat 95% center;
+    width: calc(100% / 3)
   }
 
   &__button {
@@ -44,5 +42,6 @@
     border-radius: .4rem;
     font-size: 1rem;
     font-weight: 500;
+    width: calc(100% / 3 - 1rem);
   }
 }
