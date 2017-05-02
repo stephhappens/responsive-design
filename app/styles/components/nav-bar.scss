@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: $c-white;
+  // background: black;
+  align-items: center;
+  padding-top: 1rem;
+  &__logo {
+    margin-left: 3rem;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: $c-white;
+
+      &-media {
+        margin-right: 1rem;
+        text-decoration: none;
+        color: $c-white;
+      }
+
+      &-btn {
+        padding: 0.5rem;
+        background: $c-white;
+        color: $c-black;
+        text-decoration: none;
+        border-radius: 0.3rem;
+        margin-right: 3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 700px) {
+  .nav__right-link {
+    display: none;
+}
+}

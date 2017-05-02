@@ -1,0 +1,39 @@
+.footer {
+  border-top: 0.1rem solid $c-darkgray;
+  color: $c-darkgray;
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+
+    &-copyright {
+      margin-right: 1rem;
+    }
+  }
+
+  &__right {
+    display: flex;
+
+    &-social {
+      margin-right: 1rem;
+
+      &-social:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
