@@ -1,5 +1,5 @@
 .footer {
-  border-top: .1rem solid $c-darkgray;
+  border-top: 0.1rem solid $c-darkgray;
   color: $c-darkgray;
   font-size: 1rem;
   padding-top: 2rem;
@@ -9,13 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-@media (min-width: 350px) and (max-width: 700px) {
-  .footer__content {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   }
 
   &__left {
@@ -36,5 +29,11 @@
         margin-right: 0;
       }
     }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .footer__content {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
