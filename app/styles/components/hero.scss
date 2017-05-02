@@ -4,7 +4,7 @@
 
   &__content {
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 15rem;
 
 
     @media (min-width: 350px) and (max-width: 700px) {
@@ -20,7 +20,7 @@
   }
 
   &__background {
-    background: url('/images/hero.png') no-repeat center;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.00) 100%), url('/images/hero.png') no-repeat center;
     background-size: cover;
     height: 45rem;
   }
