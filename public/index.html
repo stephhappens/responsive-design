@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>responsive-design</title>
   <link rel="stylesheet" href="/app.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -56,15 +57,17 @@
     <div class="app__content">
       <div class="container__horizontal">
         <div class="section">
-        <ul class="filter__group">
-          <span class="filter__group-type filter__group-active"><li class="filter__group-type">Most Popular</li></span>
-          <li class="filter__group-type">Coming Up</li>
-          <li class="filter__group-type">Near You</li>
-        </ul>
-        <div class="grid">
-            <div class="grid__item">
+          <ul class="filter__group">
+            <span class="filter__group-type filter__group-active"><li class="filter__group-type">Most Popular</li></span>
+            <li class="filter__group-type">Coming Up</li>
+            <li class="filter__group-type">Near You</li>
+          </ul>
+
+          <div class="grid grid__media">
+
+            <div class="grid__item grid__media-item">
               <div class="grid__item-top">
-                <img src="/images/guitar.png" alt="Guitar" class="grid__item-img">
+                <img src="/images/guitar.png" alt="Guitar" class="grid__item-img grid__media-item-img">
                 <p class="grid__item-title">Country</p>
                 <p class="grid__item-subtitle">Kenny Chesney w/ Grace Potter</p>
               </div>
@@ -82,7 +85,7 @@
 
             <div class="grid__item">
               <div class="grid__item-top">
-                <img src="/images/saxophone.png" alt="Guitar" class="grid__item-img">
+                <img src="/images/saxophone.png" alt="Guitar" class="grid__item-img halp">
                 <p class="grid__item-title">Jazz</p>
                 <p class="grid__item-subtitle">Gerald Albright Band</p>
               </div>
@@ -115,19 +118,22 @@
                 </div>
               </div>
             </div>
+
           </div>
-        <div class="button__flex">
-          <button class="discover">Discover More</button>
-        </div>
+
+          <div class="button__flex">
+            <button class="discover">Discover More</button>
+          </div>
+
         </div>
       </div>
-      </div>
+    </div>
 
     <footer>
       <div class="footer">
-          <div class="container__horizontal">
-            <div class="section">
-              <div class="footer__content">
+        <div class="container__horizontal">
+          <div class="section">
+            <div class="footer__content">
               <div class="footer__left">
                 <p class="footer__left-copyright">© 2015 Caddis</p>
                 <p class="footer__left-copyright">Privacy Policy</p>
@@ -136,11 +142,11 @@
 
               <div class="footer__right">
                 <a href="https://www.facebook.com/caddisinteractive" class="footer__right-social"><img src="/images/facebook-icon.png" alt="Facebook Icon"></a>
-                <a href="https://twitter.com/caddisint"class="footer__right-social"><img src="/images/twitter-icon.png" alt="Twitter Icon"></a>
+                <a href="https://twitter.com/caddisint" class="footer__right-social"><img src="/images/twitter-icon.png" alt="Twitter Icon"></a>
                 <a href="https://www.caddis.co/" class="footer__right-social"><img src="/images/googleplus-icon.png" alt="Google Plus Icon"></a>
               </div>
-              </div>
             </div>
+          </div>
         </div>
       </div>
     </footer>
